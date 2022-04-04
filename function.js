@@ -64,6 +64,8 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  var demo = document.getElementById("demo");
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s work time";
@@ -71,8 +73,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    var demo = document.getElementByID("demo");
-    demo.style.color = "#FF0000";
+    demo.style.color = "#ff0000"
     document.getElementById("demo").innerHTML = "NEXT MOVEMENT";
   }
 }, 1000);
