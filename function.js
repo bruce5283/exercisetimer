@@ -71,6 +71,8 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
+    var demo = document.getElementByID("demo");
+    demo.style.color = "#FF0000";
     document.getElementById("demo").innerHTML = "NEXT MOVEMENT";
   }
 }, 1000);
