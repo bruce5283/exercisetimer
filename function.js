@@ -34,7 +34,7 @@ height: ${height}vh;
 @media (prefers-color-scheme: dark) {
 
 #demo {
-color: red;
+color: #12A89E;
 }
 }
 
